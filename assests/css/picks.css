@@ -1,22 +1,41 @@
+#picks {
+    padding: 10rem 0;
+}
+
+.picks__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5rem 4rem;
+/*     padding: 0.5rem;
+ */}
 
 
-.auctions__box {
+.picks__box {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 6fr 0.5fr 1.5fr 1fr;
-    gap: 0.5rem;
+    grid-template-rows: 4fr 0.5fr 1fr 1fr;
+    gap: 0.7rem;
     background: var(--primary-color);
     border-radius: var(--border-raduis-3xl);
     padding: 20px;
+	transition: 0.4s ease;
 }
 
-.auctions__img {
+.picks__box:hover {
+	transform: scale(1.05);
+}
+
+.picks__img {
   position: relative;
   overflow: hidden;
-	    border-radius: var(--border-raduis-3xl);
 }
 
-.auctions__img::before {
+.picks__img img {
+	  border-radius: var(--border-raduis-2xl);
+}
+
+/* .picks__img::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -32,7 +51,7 @@
 	opacity: 0;
 }
 
-.auctions__img:hover::before {
+.picks__img:hover::before {
 	-webkit-animation: circle .75s;
 	animation: circle .75s;
 }
@@ -63,14 +82,14 @@
 		height: 200%;
 		opacity: 0;
 	}
-}
+} */
 
-.auctions__name {
+.picks__name {
   font-size: 1.7rem;
   line-height: 2.5;
 }
 
-.auctions__creator {
+.picks__creator {
     display: grid;
     grid-template-columns: 7fr 1fr;
     grid-template-rows: 1fr;
@@ -79,85 +98,61 @@
 }
 
 
-.auctions__creator--img {
+.picks__creator--img {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
     gap: 0.5rem;
 }
 
-.auctions__creator--img img {
+.picks__creator--img img {
   width: 5rem!important;
   border-radius: var(--border-raduis-lg);
 }
 
 
-.auctions__creator p:nth-child(1) {
+.picks__creator p:nth-child(1) {
   font-weight: 100;
 }
 
-.auctions__bid {
+.picks__bid {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
 }
 
-.auctions__creator--content p:nth-child(1) {
+.picks__creator--content p:nth-child(1) {
   font-weight: 100;
 }
 
-.auctions__like {
+.picks__like {
   background: var(--tertiary-color);
   width: 7rem;
   height: 3rem;
   line-height: 3rem;
   padding: 0 1rem;
   border-radius: var(--border-raduis-md);
+  position: absolute;
+  top: 1.3rem;
+  right: 2.7rem;
 }
 
-.auctions__like i {
+.picks__like i {
   padding-right: 0.5rem;
 }
 
-.auctions__btn {
+.picks__btn {
   background: var(--secondary-color);
   padding: 1.3rem 2rem;
   color: var(--light-color);
 }
 
-
-
-
-.owl-dots {
-    text-align: center;
-    padding-top: 15px;
-  }
-  .owl-dots button.owl-dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: inline-block;
-    background: #ccc;
-    margin: 0 3px;
-  }
-  .owl-dots button.owl-dot.active {
-    background-color: #fff;
-  }
-  .owl-dots button.owl-dot:focus {
-    outline: none;
-  }
-  .owl-nav button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 255, 255, 0.38) !important;
-  }
-  .owl-nav span {
-      font-size: 70px;    
-      position: relative;
-      top: -5px;
-  }
-  .owl-nav button:focus {
-      outline: none;
-  }
+.picks__btn:hover {
+	background-color: transparent;
+    box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
+    -webkit-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
+    -ms-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
+    -o-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
+    color: var(--light-color);
+}

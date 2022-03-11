@@ -74,7 +74,7 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 3rem;
 }
 
 .btn {
@@ -100,4 +100,17 @@ a {
 .btn__primary:hover {
     background: var(--secondary-color);
     color: var(--light-color);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.title h2 {
+    font-size: var(--font-size-3xl);
 }
