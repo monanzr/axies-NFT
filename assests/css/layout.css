@@ -71,6 +71,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    /* max-width: 100%; */
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
