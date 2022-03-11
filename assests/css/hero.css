@@ -1,0 +1,43 @@
+#hero {
+    min-height: 88vh;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.hero__left--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* flex: 50% */
+}
+
+.hero__left--item h1 {
+    font-size: var(--font-size-4xl);
+    line-height: 9rem;
+}
+
+.hero__left--item p {
+    font-size: 2rem;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.left--item__demo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__btn {
+    font-size: 2rem;
+    padding: 15px 40px;
+    margin: 0 1rem;
+}
