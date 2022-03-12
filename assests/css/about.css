@@ -1,0 +1,29 @@
+#about {
+    padding: 5rem 0;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about__box {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.4s ease;
+    padding: 2rem;
+    border-radius: var(--border-raduis-lg);
+}
+
+.about__box  p {
+    text-align: center;
+    font-weight: 200;
+}
+
+.about__box:hover {
+        box-shadow: 3rem 2.5rem 3rem 2rem rgb(168 168 168 / 5%);
+    background: var(--primary-color);
+}
