@@ -26,6 +26,10 @@
     line-height: 9rem;
 }
 
+.hero__left--item h1 span {
+    color: #af1cf6;
+}
+
 .hero__left--item p {
     font-size: 2rem;
     font-family: 'Urbanist', sans-serif;
@@ -163,8 +167,8 @@
         transform: scale(0.9);
     }
     50% {
-        -webkit-transform: scale(1.4);
-        transform: scale(1.4);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
     }
     100% {
         -webkit-transform: scale(0.9);

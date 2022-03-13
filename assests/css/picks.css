@@ -2,13 +2,35 @@
   padding: 5rem 0;
 }
 
+.piscks__filter {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.picks__filter--btn {
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-raduis-3xl);
+  color: var(--light-color);
+  margin: 0 1rem;
+  transition: 0.4s ease;
+}
+
+.picks__filter--btn:hover {
+  background: var(--primary-color);
+}
+
 .picks__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 5rem 4rem;
-/*     padding: 0.5rem;
-*/}
+  /*     padding: 0.5rem;
+*/
+  justify-items: end;
+  }
 
 
 .picks__box {
@@ -155,4 +177,11 @@ background-color: transparent;
   -ms-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
   -o-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
   color: var(--light-color);
+}
+
+.picks__more {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
 }
