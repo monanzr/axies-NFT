@@ -123,3 +123,20 @@ img {
 .title p {
     border-bottom: 2px solid #4C2566
 }
+
+.light__theme {
+    --light-color: #030303!important;
+    --dark-color: #f7f7f7!important;
+    --primary-color: #f7f7f7!important;
+}
+
+.light__theme body {
+    background: #fff!important;
+}
+
+.light__theme .btn__primary:hover {
+    color: var(--dark-color);
+}
+
+
+
