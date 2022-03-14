@@ -30,7 +30,7 @@
   /*     padding: 0.5rem;
 */
   justify-items: end;
-  }
+}
 
 
 .picks__box {
@@ -41,16 +41,16 @@
   background: var(--primary-color);
   border-radius: var(--border-raduis-3xl);
   padding: 20px;
-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .picks__box:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .picks__img {
-position: relative;
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .picks__img img {
@@ -107,8 +107,8 @@ animation: circle .75s;
 } */
 
 .picks__name {
-font-size: 1.7rem;
-line-height: 2.5;
+  font-size: 1.7rem;
+  line-height: 2.5;
 }
 
 .picks__creator {
@@ -128,13 +128,13 @@ line-height: 2.5;
 }
 
 .picks__creator--img img {
-width: 5rem!important;
-border-radius: var(--border-raduis-lg);
+  width: 5rem!important;
+  border-radius: var(--border-raduis-lg);
 }
 
 
 .picks__creator p:nth-child(1) {
-font-weight: 100;
+  font-weight: 100;
 }
 
 .picks__bid {
@@ -145,33 +145,33 @@ font-weight: 100;
 }
 
 .picks__creator--content p:nth-child(1) {
-font-weight: 100;
+  font-weight: 100;
 }
 
 .picks__like {
-background: var(--tertiary-color);
-width: 7rem;
-height: 3rem;
-line-height: 3rem;
-padding: 0 1rem;
-border-radius: var(--border-raduis-md);
-position: absolute;
-top: 1.3rem;
-right: 2.7rem;
+  background: var(--tertiary-color);
+  width: 7rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  border-radius: var(--border-raduis-md);
+  position: absolute;
+  top: 1.3rem;
+  right: 2.7rem;
 }
 
 .picks__like i {
-padding-right: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .picks__btn {
-background: var(--secondary-color);
-padding: 1.3rem 2rem;
-color: var(--light-color);
+  background: var(--secondary-color);
+  padding: 1.3rem 2rem;
+  color: var(--light-color);
 }
 
 .picks__btn:hover {
-background-color: transparent;
+  background-color: transparent;
   box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
   -webkit-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
   -ms-box-shadow: inset 0 0 0 0.2rem var(--secondary-color);
@@ -184,4 +184,16 @@ background-color: transparent;
   margin-top: 6rem;
   display: flex;
   justify-content: center;
+}
+
+.light__theme .picks__like {
+  color: var(--dark-color);
+}
+
+.light__theme .picks__btn {
+  color: var(--dark-color);
+}
+
+.light__theme .picks__btn:hover {
+  color: var(--light-color);
 }
