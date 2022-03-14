@@ -23,25 +23,28 @@
 }
 
 .picks__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+  /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
+  flex-flow: wrap;
   gap: 5rem 4rem;
   /*     padding: 0.5rem;
 */
   justify-items: end;
+  justify-content: space-around;
 }
 
 
 .picks__box {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: auto;
   gap: 0.7rem;
   background: var(--primary-color);
   border-radius: var(--border-raduis-3xl);
   padding: 20px;
   transition: 0.4s ease;
+  width: 40rem;
 }
 
 .picks__box:hover {
@@ -55,6 +58,7 @@
 
 .picks__img img {
   border-radius: var(--border-raduis-2xl);
+  width: 100%;
 }
 
 /* .picks__img::before {
