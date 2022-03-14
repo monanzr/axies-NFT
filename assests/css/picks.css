@@ -36,7 +36,7 @@
 .picks__box {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 4fr 0.5fr 1fr 1fr;
+  grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
   gap: 0.7rem;
   background: var(--primary-color);
   border-radius: var(--border-raduis-3xl);
