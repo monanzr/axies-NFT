@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar__logo img {
@@ -15,11 +16,17 @@
     margin-top: 1rem;
 }
 
+.navbar__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .nav__lists {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
 }
 
 .nav__list {
