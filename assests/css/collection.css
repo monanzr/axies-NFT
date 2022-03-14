@@ -15,12 +15,12 @@
 .collection__box {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: auto;
     gap: 2rem;
     background: var(--primary-color);
     border-radius: var(--border-raduis-3xl);
     padding: 20px;
-    /* width: 79%; */
+    width: 40rem;
     margin: 0 1rem;
 }
 
