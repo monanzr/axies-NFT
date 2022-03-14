@@ -3,12 +3,12 @@
     position: relative;
 }
 
-.footer__wrapper {display: flex;justify-content: space-around;align-items: center;padding: 4rem 0;}
+.footer__wrapper {display: flex;justify-content: space-around;align-items: center;padding: 4rem 0;flex-flow: wrap;}
 
 .footer__box {
     height: 25rem;
     padding: 3rem;
-    flex: 20%;
+    flex: 15%;
 }
 
 .footer__box h3 {
