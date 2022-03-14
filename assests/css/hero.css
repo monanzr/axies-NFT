@@ -13,8 +13,8 @@
     align-items: center;
     overflow-x: hidden;
     flex-flow: wrap;
-    justify-content: center;
     gap: 4rem;
+    justify-content: center;
 }
 
 .hero__left--item {
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    flex: 50%;
+    width: 45%;
 }
 
 .hero__left--item h1 {
@@ -54,7 +54,7 @@
 }
 
 .hero__right--item {
-    flex: 50%
+    width: 45%;
 }
 
 .hero__img--box {
