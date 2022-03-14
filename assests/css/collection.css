@@ -71,7 +71,7 @@
 
 .collection__content p:nth-child(2) span {
     font-size: 1.3rem;
-        font-weight: 100
+    font-weight: 100
 }
 
 .collection__like {
@@ -81,4 +81,8 @@
     line-height: 3rem;
     padding: 0 1rem;
     border-radius: var(--border-raduis-md);
+}
+
+.light__theme .collection__like {
+    background: #fff;
 }
