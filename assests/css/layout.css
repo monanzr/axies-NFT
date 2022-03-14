@@ -50,6 +50,8 @@ body {
     background: #14141f;
     color: var(--light-color);
     direction: ltr;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 button,
@@ -77,6 +79,7 @@ img {
 
 .container {
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 3rem;
 }
