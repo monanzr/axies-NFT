@@ -4,6 +4,7 @@
 
 .about__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -16,6 +17,7 @@
     transition: 0.4s ease;
     padding: 2rem;
     border-radius: var(--border-raduis-lg);
+    width: 30rem;
 }
 
 .about__box  p {
