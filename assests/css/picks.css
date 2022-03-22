@@ -27,7 +27,11 @@
   /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
   /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
   flex-flow: wrap;
+<<<<<<< HEAD
   gap: 5rem 1rem;
+=======
+  gap: 5rem 2rem;
+>>>>>>> d6268fdc6d7e24e0862c661357e716969536d5ff
   /* padding: 0.5rem; */
   justify-items: end;
   justify-content: space-around;
