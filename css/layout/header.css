@@ -30,7 +30,7 @@
 }
 
 .nav__list {
-    margin: 0 1rem;
+    /* margin: 0 1.3rem; */
     position: relative;
 }
 
@@ -39,24 +39,43 @@
     content: '';
     position: absolute;
     background-color: #fff;
-    height: 2px;
+    height: 1px;
     width: 100%;
     /* bottom: 12%; */
     /* left: 10px; */
     margin: 28px auto;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.3s ease-in-out 0s;
+    transition: transform 0.4s ease-in-out 0s;
 }
 
 .nav__list:hover::before {
     transform: scaleX(1);
 }
 
+.nav__list::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 1px solid snow;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.nav__list:hover::after {
+    transform: rotate(225deg);
+        top: 45%;
+}
+
 .nav__link {
     color: var(--light-color);
     transition: all 0.4s ease-in-out;
     font-size: 1.4rem;
+    padding: 1.3rem;
 }
 
 .nav__link:hover {

@@ -27,8 +27,8 @@
 }
 
 .about__box:hover {
-    box-shadow: 3rem 2.5rem 3rem 2rem rgb(168 168 168 / 5%);
-    background: var(--primary-color);
+    box-shadow: 0 0 3rem 1rem rgb(168 168 168 / 5%);
+    /* background: var(--primary-color); */
 }
 
 .light__theme .about__box  p {
