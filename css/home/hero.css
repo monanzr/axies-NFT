@@ -22,11 +22,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 45%;
+    flex: 45%;
+    padding-left: 3rem;
 }
 
 .hero__left--item h1 {
-    font-size: var(--font-size-4xl);
+    font-size: 5rem;
     line-height: 9rem;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .hero__right--item {
-    width: 45%;
+    flex: 45%;
 }
 
 .hero__img--box {
@@ -84,88 +85,88 @@
 }
 
 .hero__img--four {
-        top: 26rem;
-        left: 60rem;
+    top: 26rem;
+    left: 60rem;
 }
 
 .hero__img--five {
-        top: 10rem;
-        left: 54rem;
+    top: 10rem;
+    left: 54rem;
 }
 
 .hero__img--six {
-        top: 10rem;
-        left: 18rem;
+    top: 10rem;
+    left: 18rem;
 }
 
 .hero__img--seven {
-        top: 17rem;
-        left: 56rem;
-        border: 3px solid #5142FB;
-        border-radius: 50%;
-        padding:0.6rem;
+    top: 17rem;
+    left: 56rem;
+    border: 3px solid #5142FB;
+    border-radius: 50%;
+    padding:0.6rem;
 }
 
 .hero__img--eight {
-        top: 18rem;
-        left: 12rem;
+    top: 18rem;
+    left: 12rem;
 }
 
 .hero__img--nine {
-        top: 25rem;
-        left: 20rem;
-        animation: zoom-fade 1s linear infinite;
+    top: 25rem;
+    left: 20rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--ten {
-        top: 33rem;
-        left: 17rem;
-        animation: zoom-fade 1s linear infinite;
+    top: 33rem;
+    left: 17rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--eleven {
-        top: 30rem;
-        left: 25rem;
-        animation: zoom-fade 1s linear infinite;
+    top: 30rem;
+    left: 25rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--twelve {
-        top: 28rem;
-        left: 52rem;
-        animation: zoom-fade 1s linear infinite;
+    top: 28rem;
+    left: 52rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--thirteen {
-        top: 29rem;
-        left: 54rem;
+    top: 29rem;
+    left: 54rem;
 }
 
 .hero__img--fourteen {
-        top: 38rem;
-        left: 50rem;
+    top: 38rem;
+    left: 50rem;
 }
 
 .hero__img--fiveteen {
-        top: 42rem;
-        left: 23rem;
-            animation: zoom-fade 1s linear infinite;
+    top: 42rem;
+    left: 23rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--sixteen {
-        top: 45rem;
-        left: 32rem;
-            animation: zoom-fade 1s linear infinite;
+    top: 45rem;
+    left: 32rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 .hero__img--seventeen{
-        top: 5rem;
-        left: 48rem;
-            animation: zoom-fade 1s linear infinite;
+    top: 5rem;
+    left: 48rem;
+    animation: zoom-fade 1s linear infinite;
 }
 
 @keyframes myOrbit {
     from { transform: rotate(0deg) translateX(220px) rotate(0deg);}
-    
+
     to   { transform: rotate(360deg) translateX(220px) rotate(-360deg); }
 }
 

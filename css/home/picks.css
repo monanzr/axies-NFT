@@ -43,7 +43,7 @@
   border-radius: var(--border-raduis-3xl);
   padding: 20px;
   transition: 0.4s ease;
-  width: 24%;
+  flex: 24%;
 }
 
 .picks__box:hover {
@@ -120,6 +120,7 @@ animation: circle .75s;
   grid-template-rows: 1fr;
   border-bottom: 0.2rem solid var(--tertiary-color);
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 
@@ -142,9 +143,14 @@ animation: circle .75s;
 
 .picks__bid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
+  justify-items: center;
+}
+
+.picks__creator--content, .picks__history {
+  font-size: 1.3rem;
 }
 
 .picks__creator--content p:nth-child(1) {
@@ -169,7 +175,7 @@ animation: circle .75s;
 
 .picks__btn {
   background: var(--secondary-color);
-  padding: 1.3rem 2rem;
+  padding: 1rem 2rem;
   color: var(--light-color);
 }
 
