@@ -150,13 +150,16 @@
     border-radius: var(--border-raduis-xl);
     padding: 0.5rem 1rem;
     flex: 50%;
-    position: relative;
     align-items: center;
 }
 
 .product__owner--box .seller__checked {
     left: 6rem;
     top: 5.2rem;
+}
+
+.product__img--box {
+    position: relative
 }
 
 .product__owner--img {
