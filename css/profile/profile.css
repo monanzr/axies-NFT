@@ -152,8 +152,16 @@ gap: 3rem;}
 
 .product__input {
     padding: 1rem;
-    border-radius: var(--border-raduis-md);background: transparent;border: 1px solid var(--primary-color);margin: 1rem 0;}
+    border-radius: var(--border-raduis-md);
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  margin: 1rem 0;
+  outline: 0;
+}
 
+.product__input:focus {
+  box-shadow: 0.07rem 0.0rem 0.5rem 0.1rem var(--secondary-color);
+}
 .product__account--left, .product__account--right {
     flex: 47%;
     display: grid;gap: 2rem;}
