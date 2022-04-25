@@ -74,7 +74,7 @@ animation-play-state: paused;
 .profile__wrapper {
     display: flex;
     gap: 3rem 3rem;
-    padding: 5rem 1rem;
+    padding: 5rem 5rem;
     font-family: 'Urbanist';
     justify-content: space-around;
     flex-wrap: wrap;
