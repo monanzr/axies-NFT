@@ -42,7 +42,7 @@
 
 .left--item__demo {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;gap: 1rem 0;flex-direction: row;
     margin-top: 1rem;
     justify-content: center;
     align-items: center;
@@ -184,3 +184,20 @@
         transform: scale(0.9);
     }
 }
+
+    @media only screen and (max-width: 680px) {
+.hero__right--item {
+    display: none;
+}
+    }
+
+    @media only screen and (max-width: 450px) {
+        .hero__left--item h1 {
+            font-size: 3rem;
+            line-height: 2
+        }
+
+        .left--item__demo {
+            justify-content: start;
+        }
+    }

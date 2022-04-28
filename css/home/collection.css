@@ -4,13 +4,15 @@
 }
 
 .collection__wrapper {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-between;
-}
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem 3rem;
+    /* padding: 0 8rem; *//* flex-direction: row; */
+    
+    /* flex-wrap: wrap; */
+    
+    /* align-content: space-between; */
+justify-content: center;}
 
 .collection__box {
     display: grid;
@@ -20,9 +22,10 @@
     background: var(--primary-color);
     border-radius: var(--border-raduis-3xl);
     padding: 20px;
-    width: 40rem;
+    /* width: 40rem; */
     margin: 0 1rem;
-}
+
+  }
 
 .collection__img--box {
     display: grid;
@@ -33,7 +36,7 @@
 }
 
 .collection__img {
-    width: 11rem;
+    width: 12rem;
     height: 12rem;
     object-fit: cover;
     border-radius: var(--border-raduis-md);
@@ -41,12 +44,12 @@
 }
 
 .collection__img:nth-child(1) {
-    width: 16rem;
+    width: 19rem;
     grid-column: span 3;
 }
 
 .collection__img:nth-child(2) {
-    width: 18rem;
+    width: 19rem;
     grid-column: span 3;
 }
 
@@ -61,7 +64,7 @@
 .collection__content{
     display: grid;
     grid-template-columns: 1fr 3.5fr 1fr;
-}
+/* gap: 1rem; */}
 
 .collection__content img {
     width: 6rem;
@@ -70,11 +73,13 @@
 
 .collection__content p:nth-child(1) {
     padding-top: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .collection__content p:nth-child(2) span {
     font-size: 1.3rem;
-    font-weight: 100
+    font-weight: 100;
+    padding-left: 0.5rem;
 }
 
 .collection__like {
@@ -88,4 +93,42 @@
 
 .light__theme .collection__like {
     background: #fff;
+}
+
+@media only screen and (max-width: 413px) {
+    .collection__wrapper {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+}
+    .collection__content p {
+    font-size: 1.1rem;
+}
+}
+
+@media only screen and (max-width: 576px) and (min-width: 414px) {
+.collection__wrapper {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+}
+    .collection__content p {
+    font-size: 1.5rem!important;
+}
+}
+
+@media only screen and (max-width: 991px) and (min-width:577px) {
+.collection__wrapper {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+justify-content: center;}
+}
+
+@media only screen and (max-width: 1200px) {
+    
+.collection__wrapper {
+    gap: 2rem 0;
+}
+    
+.collection__content p {
+    font-size: 1.2rem;
+}
+
+    
+
 }
