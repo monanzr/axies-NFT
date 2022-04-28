@@ -23,11 +23,11 @@
 }
 
 .picks__wrapper {
-  display: flex;
-  /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20rem, 1fr));
   /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
   flex-flow: wrap;
-  gap: 2.5rem 1rem;
+  gap: 2.5rem 3rem;
   /* padding: 0.5rem; */
   justify-items: end;
   justify-content: space-around;
@@ -205,4 +205,43 @@ animation: circle .75s;
 
 .light__theme .picks__btn:hover {
   color: var(--light-color);
+}
+
+
+/* ---- Responsive -----*/
+
+@media only screen and (min-width: 50px) {
+                .product__account--left, .product__account--right {
+        flex: 100%;
+    }
+        .profile__cover {
+        grid-template-columns: repeat(1,minmax(100%,1fr));
+    }
+                    .product__account--left, .product__account--right {
+        flex: 100%;
+    }
+
+    .social__btn {
+        width: 50%
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+        .picks__wrapper {
+          grid-template-columns: repeat(1, minmax(20rem, 1fr))!important;
+        }
+}
+
+@media only screen and (max-width: 767px) and (min-width:577px) {
+
+        .picks__wrapper {
+          grid-template-columns: repeat(2, minmax(20rem, 1fr));
+        }
+}
+
+@media only screen and (max-width: 991px) and (min-width:768px) {
+          .picks__wrapper {
+          grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        }
 }

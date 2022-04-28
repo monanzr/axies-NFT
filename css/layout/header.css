@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-}
+gap: 1rem;}
 
 .nav__list {
     /* margin: 0 1.3rem; */
@@ -74,8 +74,8 @@
 .nav__link {
     color: var(--light-color);
     transition: all 0.4s ease-in-out;
-    font-size: 1.3rem;
-    padding: 0 1.3rem;
+    font-size: 1.5rem;
+    padding: 01.3rem;
 }
 
 .nav__link:hover {
