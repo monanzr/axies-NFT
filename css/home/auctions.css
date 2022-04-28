@@ -91,6 +91,28 @@
   color: var(--secondary-color);
 }
 
+.auction__box--counter {
+  display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 20%;
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.4rem;
+}
+
+.counter__text{
+      font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.auction__box--counter i {
+  color: var(--secondary-color);
+  padding-top: 4px;
+}
+
 .auctions__name {
   font-size: 1.7rem;
   line-height: 2.5;
