@@ -175,7 +175,7 @@ animation: circle .75s;
 
 .picks__btn {
   background: var(--secondary-color);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   color: var(--light-color);
 }
 
