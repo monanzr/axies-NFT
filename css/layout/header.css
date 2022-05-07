@@ -1,6 +1,9 @@
 #header {
     min-height: 10vh;
-    border-bottom: 0.05rem solid #3f3f48;
+    border-bottom: 0.1rem solid #fcfcfc3d;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
 }
 
 .navbar {
@@ -27,13 +30,13 @@
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-gap: 1rem;}
+    gap: 1rem;
+}
 
 .nav__list {
     /* margin: 0 1.3rem; */
     position: relative;
 }
-
 
 .nav__list:before {
     content: '';
