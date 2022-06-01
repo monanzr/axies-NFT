@@ -12,6 +12,10 @@
     z-index: 100;
 }
 
+#header > .container, #profileHeader > .container {
+    padding: 0 1.5rem;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
