@@ -1,4 +1,4 @@
-    #projectHero {
+#projectHero {
     background: linear-gradient(55deg, #150025, transparent 30%);
     position: relative;
     height: 40rem;
@@ -212,11 +212,9 @@
 
 .form__input {
     font-family: inherit;
-    padding: 1rem 1.5rem;
     border-radius: var(--border-raduis-3xl);
     outline: 0;
     border: none;
-    box-shadow: none;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     background-color: transparent;
@@ -251,42 +249,48 @@
         flex: 100%;
     }
     .social__btn {
-        width: 50%
+        width: 100%
+    }
+    .form__input {
+        width: 100%;
+        display: block;
     }
 }
 
 @media only screen and (min-width: 576px) {
-    .container {
-        /* max-width: 540px; */
+    .form__input {
+        width: 40%;
+        display: block;
     }
 }
 
 @media only screen and (min-width: 768px) {
+    .social__btn {
+        width: 60%
+    }
+}
+@media only screen and (min-width: 992px) {
     .container {
-        /* max-width: 720px; */
+        /* max-width: 960px; */
     }
-    @media only screen and (min-width: 992px) {
-        .container {
-            /* max-width: 960px; */
-        }
-        .product__account--left,
-        .product__account--right {
-            flex: 45%;
-        }
-        .profile__cover {
-            grid-template-columns: repeat(3, minmax(30%, 1fr));
-        }
-        .social__btn {
-            width: 70%
-        }
+    .product__account--left,
+    .product__account--right {
+        flex: 45%;
     }
-    @media only screen and (min-width: 1200px) {
-        .container {
-            /* max-width: 1140px; */
-        }
+    .profile__cover {
+        grid-template-columns: repeat(3, minmax(30%, 1fr));
     }
-    @media only screen and (min-width: 1300px) {
-        .container {
-            /* max-width: 100%; */
-        }
+    .social__btn {
+        width: 70%
     }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        /* max-width: 1140px; */
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .container {
+        /* max-width: 100%; */
+    }
+}

@@ -4,8 +4,8 @@
 
 .piscks__filter {
   margin: 5rem 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
 }
 
 .picks__filter--btn {
@@ -211,37 +211,82 @@ animation: circle .75s;
 /* ---- Responsive -----*/
 
 @media only screen and (min-width: 50px) {
-                .product__account--left, .product__account--right {
-        flex: 100%;
-    }
-        .profile__cover {
-        grid-template-columns: repeat(1,minmax(100%,1fr));
-    }
-                    .product__account--left, .product__account--right {
-        flex: 100%;
-    }
+  .product__account--left, .product__account--right {
+    flex: 100%;
+  }
+  .profile__cover {
+    grid-template-columns: repeat(1,minmax(100%,1fr));
+  }
+  .product__account--left, .product__account--right {
+    flex: 100%;
+  }
 
-    .social__btn {
-        width: 50%
-    }
+  .social__btn {
+    width: 50%
+  }
 
 }
 
 @media only screen and (max-width: 576px) {
-        .picks__wrapper {
-          grid-template-columns: repeat(1, minmax(20rem, 1fr))!important;
-        }
+  .picks__wrapper {
+    grid-template-columns: repeat(1, minmax(20rem, 1fr))!important;
+  }
+
+  .piscks__filter {
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 2rem;
+  }
+
+  .filter__wrapper:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(10rem, 1fr));
+    gap: 1rem;
+  }
+
+  .filter__wrapper:nth-child(2) {
+    display: flex;
+  }
+
+  .filter__wrapper:nth-child(2) .picks__filter--btn {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width:577px) {
 
-        .picks__wrapper {
-          grid-template-columns: repeat(2, minmax(20rem, 1fr));
-        }
+  .picks__wrapper {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+  }
+
+  .piscks__filter {
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 2rem;
+  }
+  .filter__wrapper:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .filter__wrapper:nth-child(2) {
+    display: flex;
+  }
+
+  .filter__wrapper:nth-child(2) .picks__filter--btn {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px) {
-          .picks__wrapper {
-          grid-template-columns: repeat(3, minmax(20rem, 1fr));
-        }
+  .picks__wrapper {
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  }
 }

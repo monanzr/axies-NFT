@@ -99,18 +99,19 @@
 
 
 @media only screen and (max-width:767px) {
-.sticky__bar {
-  width: 3rem;}
+  .sticky__bar {
+    width: 3rem;}
 
-.sticky__social li {
-  width: 30rem;
-  padding: 7px;
-}
+  .sticky__social li {
+    width: 30rem;
+    padding: 7px;
+  }
 
-.sticky__social li i {
-  width: 2.2rem;
-  height: 2.2rem;
-  font-size: 1.5rem;
-padding: 5px;}
+  .sticky__social li i {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.3rem;
+    padding: 5px;
+  }
 }
 

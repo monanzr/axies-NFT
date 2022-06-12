@@ -185,19 +185,19 @@
     }
 }
 
-    @media only screen and (max-width: 680px) {
-.hero__right--item {
-    display: none;
+@media only screen and (max-width: 680px) {
+    .hero__right--item {
+        display: none;
+    }
 }
+
+@media only screen and (max-width: 450px) {
+    .hero__left--item h1 {
+        font-size: 3rem;
+        line-height: 1.7;
     }
 
-    @media only screen and (max-width: 450px) {
-        .hero__left--item h1 {
-            font-size: 3rem;
-            line-height: 2
-        }
-
-        .left--item__demo {
-            justify-content: start;
-        }
+    .left--item__demo {
+        justify-content: start;
     }
+}
