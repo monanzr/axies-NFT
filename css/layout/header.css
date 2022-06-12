@@ -2,8 +2,19 @@
     min-height: 10vh;
     border-bottom: 0.1rem solid #fcfcfc3d;
     width: 100%;
+}
+
+#profileHeader {
+    min-height: 10vh;
+    border-bottom: 0.1rem solid #fcfcfc3d;
+    width: 100%;
     position: absolute;
     z-index: 100;
+}
+
+#header>.container,
+#profileHeader>.container {
+    padding: 0 1.5rem;
 }
 
 .navbar {
@@ -15,7 +26,7 @@
 }
 
 .navbar__logo img {
-    height: 7rem;
+    height: 6rem;
     margin-top: 1rem;
 }
 
@@ -78,7 +89,7 @@
     color: var(--light-color);
     transition: all 0.4s ease-in-out;
     font-size: 1.5rem;
-    padding: 01.3rem;
+    padding: 1.3rem;
 }
 
 .nav__link:hover {
@@ -179,4 +190,75 @@
 
 .light__theme .navbar__mood .navbar__mood-link {
     background: var(--light-color);
+}
+
+.navSide,
+.navSide__open {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .navbar__demo,
+    .navbar__nav {
+        display: none;
+    }
+    .navSide__Close--box {
+        border-top: 1px solid #cecece5e;
+        padding: 25px 0 25px 5px;
+        position: relative;
+    }
+    .navSide__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        z-index: 5;
+        border: 1px solid #cecece5e;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: var(--light-color);
+    }
+    .navSide__open {
+        display: block;
+    }
+    .navSide {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #8d71eefa;
+        overflow-x: hidden;
+        transition: 0.5s;
+        /* padding-top: 60px; */
+    }
+    .navSide__list {
+        border-top: 1px solid #cecece5e;
+        padding: 6px 0 6px 5px;
+    }
+    .navSide__link,
+    .navSide__dropdown {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: var(--light-color);
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+    .dropdown__box {
+        display: none;
+        background-image: linear-gradient(#aaf, #bbf 70%);
+        padding-left: 8px;
+    }
 }

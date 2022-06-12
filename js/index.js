@@ -33,50 +33,73 @@ $(document).ready(function() {
 });
 
 
-document.querySelector(".light__mood").addEventListener("click", function () {
+document.querySelector(".light__mood").addEventListener("click", function() {
     document.querySelector("html").classList.add("light__theme");
 });
-document.querySelector(".dark__mood").addEventListener("click", function () {
+document.querySelector(".dark__mood").addEventListener("click", function() {
     document.querySelector("html").classList.remove("light__theme");
 });
 
 
-function setTimer(date, element){
-  (function countDownDate() {
-    var now = new Date().getTime();
-    var distance = date - now;
+function openNav() {
+    document.getElementById("navSide").style.width = "min(100%, 23rem)";
+}
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+function closeNav() {
+    document.getElementById("navSide").style.width = "0";
+}
+
+let dropdown = document.getElementsByClassName("navSide__dropdown");
+let i;
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+}
 
 
-    element.innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
+function setTimer(date, element) {
+    (function countDownDate() {
+        var now = new Date().getTime();
+        var distance = date - now;
 
-    if (distance < 0) {
-      element.innerHTML = "EXPIRED";
-    } else {
-      setTimeout(countDownDate,1000);
-    }
-  })()
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        element.innerHTML = days + " : " + hours + " : " + minutes + " : " + seconds;
+
+        if (distance < 0) {
+            element.innerHTML = "EXPIRED";
+        } else {
+            setTimeout(countDownDate, 1000);
+        }
+    })()
 }
 
 
 const classNAme = document.getElementsByClassName("counter__text");
 for (let i = 0; i < classNAme.length; i++) {
-  setTimer(
-      new Date("Jan 5, 2023 15:37:25").getTime(),
-      classNAme[i]
-  )
-  setTimer(
-      new Date("April 5, 2023 15:37:25").getTime(),
-      classNAme[1]
-  )
-  setTimer(
-      new Date("Jan 5, 2024 15:37:25").getTime(),
-      classNAme[3]
-  )
+    setTimer(
+        new Date("Jan 5, 2023 15:37:25").getTime(),
+        classNAme[i]
+    )
+    setTimer(
+        new Date("April 5, 2023 15:37:25").getTime(),
+        classNAme[1]
+    )
+    setTimer(
+        new Date("Jan 5, 2024 15:37:25").getTime(),
+        classNAme[3]
+    )
 }
 
 setTimer(
