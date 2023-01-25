@@ -12,7 +12,7 @@ https://preview.themeforest.net/item/axies-nft-marketplace-html-template/full_sc
 #### Product Page: https://mona-nazari-axies-nft.netlify.app/product.html
 
 ## Technologies
-Project is created with
+Project is created with:
 <br>
 <br>
 > <img width="100" src="https://user-images.githubusercontent.com/25181517/117447535-f00a3a00-af3d-11eb-89bf-45aaf56dbaf1.png">
